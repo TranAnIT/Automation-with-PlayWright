@@ -14,7 +14,7 @@ if (BMI < 18.5) {
     let minNormalWeight = 18.5 * YourHeight * YourHeight;
     let weightToGain = minNormalWeight - YourWeight;
     message += `. You need to gain at least ${weightToGain.toFixed(2)} kg to reach a normal weight.`;
-} else if (BMI >= 18.5 && BMI <= 24.9) {
+} else if (BMI <= 24.9) {
     message = 'Normal weight';
 } else if (BMI >= 25 && BMI <= 29.9) {
     message = 'Overweight';
