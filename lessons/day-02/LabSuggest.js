@@ -11,7 +11,7 @@ let message = '';
 if (BMI < 18.5) {
     message = "Underweight";
     // Suggest increase in weight
-    let minNormalWeight = 18.5 * YourHeight * YourHeight;
+    let minNormalWeight = 18.5 * YourHeight ** 2;
     let weightToGain = minNormalWeight - YourWeight;
     message += `. You need to gain at least ${weightToGain.toFixed(2)} kg to reach a normal weight.`;
 } else if (BMI <= 24.9) {
@@ -19,13 +19,13 @@ if (BMI < 18.5) {
 } else if (BMI >= 25 && BMI <= 29.9) {
     message = 'Overweight';
     // Suggest decrease in weight
-    let maxNormalWeight = 24.9 * YourHeight * YourHeight;
+    let maxNormalWeight = 24.9 * YourHeight ** 2;
     let weightToLose = YourWeight - maxNormalWeight;
     message += `. You need to lose at least ${weightToLose.toFixed(2)} kg to reach a normal weight.`;
 } else {
     message = 'Obesity';
     // Suggest decrease in weight
-    let maxNormalWeight = 24.9 * YourHeight * YourHeight;
+    let maxNormalWeight = 24.9 * YourHeight ** 2;
     let weightToLose = YourWeight - maxNormalWeight;
     message += `. You need to lose at least ${weightToLose.toFixed(2)} kg to reach a normal weight.`;
 }
