@@ -11,7 +11,3 @@ function getSecondNum(){
     console.log("Calling 2nd method");
     return 2;
 }
-
-if(somevalue && someValue > 0){
-    
-}

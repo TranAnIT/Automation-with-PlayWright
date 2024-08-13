@@ -15,4 +15,5 @@ for (let index = 0; index < MyNumArray.length; index++) {
 for (let index = 0; index < MyNumArray.length; index++) {
     MyNumArray[index] = MyNumArray[index] * 2;
 }
+
 console.log(MyNumArray);
